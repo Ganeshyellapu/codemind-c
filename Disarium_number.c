@@ -2,14 +2,14 @@
 #include<math.h>
 int main()
 {
-    int n,d,q,sum=0,c=0;
+    int n,q,r,sum=0,c;
     scanf("%d",&n);
-    c=log10(n)+1;
     q=n;
+    c=log10(n)+1;
     while(q)
     {
-        d=q%10;
-        sum=sum+pow(d,c);
+        r=q%10;
+        sum=sum+pow(r,c);
         q=q/10;
         c--;
     }
