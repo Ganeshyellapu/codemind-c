@@ -2,13 +2,10 @@
 #include<math.h>
 int main()
 {
-    int i,n,pf;
+    int n,l;
     scanf("%d",&n);
-    for(i=1;i<=n;i++)
-    {
-        pf=sqrt(i);
-    }
-    if(n%pf==0)
+    l=sqrt(n);
+    if(n==l*l)
     {
         printf("True");
     }
