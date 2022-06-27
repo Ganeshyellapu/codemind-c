@@ -1,17 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int d,n,ld;
+    int n,l,q,r;
     scanf("%d",&n);
-    ld=n%10;
-    while(n)
+    q=n;
+    l=n%10;
+    while(q)
     {
-        d=n%10;
-        if(ld<d)
+        r=q%10;
+        if(l<r)
         {
-            ld=d;
+            l=r;
         }
-        n=n/10;
+        q=q/10;
     }
-    printf("%d",ld);
+    printf("%d",l);
 }
