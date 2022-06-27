@@ -1,20 +1,21 @@
 #include<stdio.h>
 int main()
 {
-    int n,t1=0,t2=1,t3;
+    int n1=0,n2=1,n3=0,n,i,flag=0;
     scanf("%d",&n);
-    if(n==0||n==1)
+   // printf("%d %d",n1,n2);
+   flag=0;
+    for(i=2;i<n;i++)
     {
-        printf("True");
+        n3=n1+n2;
+        if(n3==n)
+        {
+            flag=1;
+        }
+        n1=n2;
+        n2=n3;
     }
-    t3=t1+t2;
-    while(t3<n)
-    {
-        t3=t1+t2;
-        t1=t2;
-        t2=t3;
-    }
-    if(t3==n)
+    if(flag==1)
     {
         printf("True");
     }
